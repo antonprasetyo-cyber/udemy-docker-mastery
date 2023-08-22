@@ -17,7 +17,7 @@ services:
       - drupal-themes:/var/www/html/themes
  
   postgres:
-    image: postgres:14
+    image: postgres:9.6
     environment:
       - POSTGRES_PASSWORD=/run/secrets/psql-pw
     volumes:
